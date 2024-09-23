@@ -1,0 +1,48 @@
+$colors: (
+    background: rgb(39, 112, 39),
+    title_colors: gold,
+    text_color:white ,
+);
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.display-item {
+    font-size: 40px;
+    text-decoration: none;
+    height: 100px;
+    width: auto;
+    text-align: center;
+    background-color: map-get($map: $colors, $key: background);
+
+    .display-text {
+        text-decoration: none;
+        color: map-get($map: $colors, $key: title_colors );
+        text-decoration: none;  
+        width: 200px;
+        height: 300px;
+    }
+}
+
+.main {
+    height: 400px;
+    width: auto;
+    background-color: map-get($map: $colors, $key: background);
+    margin-top: 200px;
+    text-align: left;
+
+    .main_pretext {
+        color: map-get($map: $colors, $key: text_color);
+        margin-left: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        display: flex;
+    }
+
+    .main_picture {
+        margin-left: 250px;
+        height: 250px;
+        width: 400px;
+    }
+}
